@@ -10,7 +10,28 @@
   </script>
   <script type="text/javascript">
     rg4js('apiKey', 'fdg3NyBBdqEuyw4W391SpA');
+    rg4js('logContentsOfXhrCalls', true);
     rg4js('enableCrashReporting', true);
+    rg4js('enablePulse', true);
+
+    rg4js('options', {
+    allowInsecureSubmissions: true,
+    ignoreAjaxAbort: true,
+    ignoreAjaxError: true,
+    debugMode: false,
+    ignore3rdPartyErrors: false,
+    wrapAsynchronousCallbacks: true,
+    excludedHostnames: ['\.local', 'hs-sites-eu1.com'],
+    excludedUserAgents: ['Mosaic'],
+    disableErrorTracking: false,
+    disablePulse: false,
+    pulseMaxVirtualPageDuration: 1800000,
+    pulseIgnoreUrlCasing: false,
+    captureUnhandledRejections: true,
+    setCookieAsSecure: false,
+    captureMissingRequests: false,
+    automaticPerformanceCustomTimings: false
+});
   </script>
   <title>Quonversa</title>
   <meta charset="utf-8">
